@@ -51,3 +51,12 @@ Detalles que se pueden afinar:
 * En ciertos puntos hay algunos _side effects_, por ej. en la implementación de `execute` en `TransactionGroup`.
 * Incluir soporte para cuando la transacción retorna un valor dentro de algún contexto, por ej. en un `Future`.
 * Afinar la definición de `unapply` -> ¿si es lo ms general posible?
+
+## Leyendo el código
+
+El código se puede entender leyendo los archivos en este orden:
+
+* `package.scala` <- tiene un _type alias_ para simplificar ciertas firmas.
+* `Transaction`
+* `TransactionGroup`
+* `Saga`
