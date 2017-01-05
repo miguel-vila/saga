@@ -43,3 +43,11 @@ for {
 ```
 
 La semántica de `run` es la misma: si una transacción falla se ejecuta el código correctivo de las que alcanzaron a ejecutarse correctamente.
+
+## @TODO
+
+Detalles que se pueden afinar:
+
+* En ciertos puntos hay algunos _side effects_, por ej. en la implementación de `execute` en `TransactionGroup`.
+* Incluir soporte para cuando la transacción retorna un valor dentro de algún contexto, por ej. en un `Future`.
+* Afinar la definición de `unapply` -> ¿si es lo ms general posible?
